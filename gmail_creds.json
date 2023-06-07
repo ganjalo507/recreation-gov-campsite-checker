@@ -1,0 +1,7 @@
+{
+    "smtp_server": "smtp.gmail.com",
+    "smtp_port":  587,
+    "sender_address": "snickolls507@gmail.com",
+    "sender_password": "adulwunrepmpjqej",
+    "recipient_email": "6612205216@mypixmessages.com"
+}

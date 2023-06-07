@@ -1,19 +1,14 @@
 # -*- coding: utf-8 -*-
-import json
-import random
-import sys
-import time
-from hashlib import md5
-from os import isatty
-
-import twitter
-
-from enums.emoji import Emoji
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
 
 MAX_TWEET_LENGTH = 279
 DELAY_FILE_TEMPLATE = "next_{}.txt"
 DELAY_TIME = 1800
 CREDENTIALS_FILE = "twitter_credentials.json"
+GMAIL_CREDS_FILE = "gmail_creds.json"
+
 
 
 def _create_tweet(tweet, tc):
@@ -100,3 +95,6 @@ def generate_availability_strings(stdin):
 
 if __name__ == "__main__":
     main(sys.argv, sys.stdin)
+
+
+def
